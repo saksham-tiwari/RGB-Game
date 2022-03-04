@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>RGB Game</title>
+</head>
+<body onload="loadFunc()">
+   <div class="top">
+       THE GREAT <br>
+       <span class="rgbcode">rgb(255, 219, 88)</span><br>
+       COLOR GAME
+   </div>
+   <div class="mid">
+       <button style="width: 15%;" onclick="newCol()">NEW COLORS</button>
+       <div class="message" style="width: 15%; display: inline-block; text-align: center; color: gray;"></div>
+       <button style="width: 10%; text-align: right;" onclick="gen3()">Easy</button> <button style="width: 10%; text-align: right;" onclick="gen6()">Hard</button>
+   </div> 
+   <div class="colors">
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    height: 25vh;
+    background-color: rgb(253, 213, 69);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 1%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.rgbcode{
+    font-size: 48px;
+}
+.mid{
+    margin-left: 31%;
+}
+.mid button{
+    background: none;
+    border: none;
+    color: maroon;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.colors{
+    background-color: rgb(4, 4, 68);
+    height: 70vh;
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 4%;
+}
+
+.box{
+    width: 135px;
+    height: 135px;
+    border: 1px white solid;
+    border-radius: 5px;
+    background-color: aqua;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
