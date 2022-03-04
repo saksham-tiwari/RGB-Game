@@ -9,19 +9,13 @@ function loadFunc(){
     
 }
 window.onclick = e => {
-    console.log(e.target);  // to get the element
-    console.log();  // to get the element tag name alone
     if(e.target.classList.contains("box")){
-        console.log(e.target.style.backgroundColor, mainCol);
         if(e.target.style.backgroundColor===mainCol){
-            console.log("success");
 
             document.querySelector(".message").innerHTML="Success!!"
             document.querySelector(".top").style.backgroundColor=mainCol
             var boxes = document.querySelectorAll(".box")
-            console.log(boxes);
             for(let i=0;i<boxes.length;i++){
-                console.log(boxes[i]);
                 boxes[i].style.backgroundColor=mainCol
                 boxes[i].style.border= "1px white solid"
             }
@@ -49,7 +43,6 @@ function genMainCol(){
 
 function newCol(){
     genMainCol()
-    console.log(document.querySelector(".colors").children.length);
     if(document.querySelector(".colors").children.length===3){
         let x = Math.floor((Math.random() * 3)+1);
         gen3()
@@ -65,7 +58,6 @@ function genBox(){
     let c2 = Math.floor((Math.random() * 256));
     let c3 = Math.floor((Math.random() * 256));
     let rgb = "rgb("+c1+","+c2+","+c3+")"
-    console.log(c1,c2,c3,rgb);
 
     const box1 = document.createElement("div")
     box1.classList.add("box")
@@ -76,7 +68,6 @@ function genBox(){
 }
 function gen6(){
     let x = Math.floor((Math.random() * 6));
-    console.log(x);
 
     document.querySelector(".message").innerHTML=""
     document.querySelector(".top").style.backgroundColor="rgb(253, 213, 69)"
@@ -117,7 +108,6 @@ function gen6(){
 }
 function gen3(){
     let x = Math.floor((Math.random() * 3));
-    console.log(x);
 
     document.querySelector(".message").innerHTML=""
     document.querySelector(".top").style.backgroundColor="rgb(253, 213, 69)"
